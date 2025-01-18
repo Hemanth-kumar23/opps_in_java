@@ -1,17 +1,17 @@
 
-class Student {
+class StuInfo {
 
     String name;
     int age;
 
     // Copy constructor
-    Student(Student original) {
+    StuInfo(StuInfo original) {
         this.name = original.name;
         this.age = original.age;
     }
 
     // Default constructor
-    Student() {
+    StuInfo() {
     }
 
     // Method to display student details
@@ -21,16 +21,16 @@ class Student {
     }
 }
 
-public class main {
+public class constructor {
 
     public static void main(String[] args) {
         // Create the first Student object
-        Student s1 = new Student();
+        StuInfo s1 = new StuInfo();
         s1.name = "John";
         s1.age = 21;
 
         // Create a copy of s1 using the copy constructor
-        Student s2 = new Student(s1);
+        StuInfo s2 = new StuInfo(s1);
 
         // Display the details of both objects
         s1.displayInfo();

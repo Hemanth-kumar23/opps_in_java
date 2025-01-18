@@ -1,18 +1,24 @@
-class pen{
+
+class pen {
+
     String color;
-    String type; 
-    public void write(){
+    String type;
+
+    public void write() {
         System.out.println("wrirting something");
     }
-    public void printcolor(){
+
+    public void printcolor() {
         System.out.println(this.color);
     }
-    public void printType(){
+
+    public void printType() {
         System.out.println(this.type);
     }
 }
 
-public class obj {
+public class objects {
+
     public static void main(String[] args) {
         pen pen1 = new pen();
         pen1.color = "blue";
@@ -20,12 +26,10 @@ public class obj {
 
         pen pen2 = new pen();
         pen2.color = "black";
-        pen2.type ="ball";
+        pen2.type = "ball";
 
         pen1.printcolor();
         pen2.printType();
 
-
-        
-    }    
+    }
 }
